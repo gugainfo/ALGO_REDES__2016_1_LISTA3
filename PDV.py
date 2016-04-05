@@ -14,6 +14,7 @@ preco_produtos = [float(input("Digite o valor do Primeiro Produto: ")),
 ate_49 = 0
 ate_80 = 0
 maior_80 = 0
+media = ((preco_produtos [0]) + (preco_produtos [1]) + (preco_produtos [2]) + (preco_produtos [3]) + (preco_produtos [4])) / 5
 
 for valor in preco_produtos:
   if valor < 50:
@@ -26,3 +27,4 @@ for valor in preco_produtos:
 print(" %d Produtos com preço abaixo de R$50,00" % ate_49)
 print(" %d Produtos com preço entre R$50,00 e R$80,00" % ate_80)
 print(" %d Produtos com preço maior que R$80,00" % maior_80)
+print(" A Média de Preço foi R$:%.2f " % float(media))
