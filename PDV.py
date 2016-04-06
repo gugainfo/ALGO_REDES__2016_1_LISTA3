@@ -5,11 +5,10 @@
 # Aluno: Gustavo Aragão (GugaInfo) Matrícula: 1310200116
 # Programa  PDV
 
-preco_produtos = [float(input("Digite o valor do Primeiro Produto: ")), 
-                  float(input("Digite o valor do Segundo Produto: ")), 
-                  float(input("Digite o valor do Terceiro Produto: ")), 
-                  float(input("Digite o valor do Quarto Produto: ")), 
-                  float(input("Digite o valor do Quinto Produto: "))]
+preco_produtos = []
+
+for i in range (0, 5):
+ preco_produtos.append(float(input("Digite o valor do Produto %d: " % (i + 1))))
 
 ate_49 = 0
 ate_80 = 0
