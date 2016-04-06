@@ -5,11 +5,10 @@
 # Aluno: Gustavo Aragão (GugaInfo) Matrícula: 1310200116
 # Programa Cinepolis
 
-avaliacao = [int(input("O que achou do Filme? 1 para Regular, 2 para Bom e 3 para Ótimo: ")),
-             int(input("O que achou do Filme? 1 para Regular, 2 para Bom e 3 para Ótimo: ")),
-             int(input("O que achou do Filme? 1 para Regular, 2 para Bom e 3 para Ótimo: ")),
-             int(input("O que achou do Filme? 1 para Regular, 2 para Bom e 3 para Ótimo: ")),
-             int(input("O que achou do Filme? 1 para Regular, 2 para Bom e 3 para Ótimo: "))]
+avaliacao = []
+
+for i in range (0, 5):
+ avaliacao.append(int(input("O que achou do Filme? 1 para Regular, 2 para Bom e 3 para Ótimo: ")))
 
 
 regular = 0
